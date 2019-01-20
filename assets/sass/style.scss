@@ -1,0 +1,47 @@
+/* 
+FOR PORTFOLIO PURPOSE
+Year    : 2019
+Authors : Rahadian Muhammad Fujana & Ilham Jaka Elandra
+note    : 
+    - We use Tachyons for most of our css layout need. So this style.css only made for something that tachyons can't do. 
+    - to run sass command : sass --watch sassdir:cssdir
+*/
+
+// Default/Reusable Classes/Components
+
+body, html {
+	font-family: 'PT Serif', serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	font-weight: 400;
+	margin: 0rem;
+}
+
+* { box-sizing: border-box; }
+
+.wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrap-min {
+  margin-right: -15px; margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 1170px;
+  }
+}
