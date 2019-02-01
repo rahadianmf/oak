@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 FOR PORTFOLIO PURPOSE
 Year    : 2019
@@ -6,6 +7,83 @@ note    :
     - We use Tachyons for most of our css layout need. So this style.css only made for something that tachyons can't do. 
     - to run sass command : sass --watch sassdir:cssdir
 */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?u6b8ho");
+  src: url("../fonts/icomoon/icomoon.eot?u6b8ho#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?u6b8ho") format("truetype"), url("../fonts/icomoon/icomoon.woff?u6b8ho") format("woff"), url("../fonts/icomoon/icomoon.svg?u6b8ho#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil2:before {
+  content: "";
+}
+
+.icon-paint-format:before {
+  content: "";
+}
+
+.icon-earth:before {
+  content: "";
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-loop2:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-whatsapp:before {
+  content: "";
+}
+
+.icon-telegram:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-youtube:before {
+  content: "";
+}
+
+.icon-github:before {
+  content: "";
+}
+
+.icon-linkedin2:before {
+  content: "";
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body, html {
   font-family: "PT Serif", serif;
   text-rendering: optimizeLegibility !important;
@@ -14,13 +92,69 @@ body, html {
   margin: 0rem;
 }
 
-* {
-  box-sizing: border-box;
+header .logo {
+  line-height: 10rem;
+}
+
+input[type=text], input[type=email] {
+  letter-spacing: 1.2pt;
+  height: 5rem;
+  border: 0.1rem solid #e6e6e6;
+  padding: 0rem 1.4rem;
+  background: #fff;
+  display: block;
+}
+
+button {
+  padding: 1rem 2.8rem;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: #7beec7;
+  color: #fff;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p, b, blockquote, strong {
+  color: #111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lekton", sans-serif;
+  letter-spacing: 1.3pt;
+  clear: both;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 
 .wrapper {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -28,6 +162,428 @@ body, html {
 .wrap-min {
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.abs-center-vertical {
+  position: absolute;
+  top: 50%;
+  resize: vertical;
+  transform: translateY(-50%);
+}
+
+.base-black {
+  color: #111111;
+}
+
+b {
+  font-weight: 900;
+}
+
+p, b, blockquote, i {
+  font-family: "ubuntu", sans-serif;
+}
+
+.lekton, .p-slider .list, .menu a {
+  font-family: "lekton", sans-serif;
+}
+
+.ubuntu, footer address, footer p, footer span, .work-filter a, .section-title h6, input[type=text], input[type=email], button {
+  font-family: "ubuntu", sans-serif;
+}
+
+.let-spc0 {
+  letter-spacing: 0.4pt;
+}
+
+.let-spc1, .section-title h6 {
+  letter-spacing: 1.3pt;
+}
+
+.let-spc2 {
+  letter-spacing: 2.5pt;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 1.6rem;
+  background: transparent;
+  position: relative;
+  padding: 5rem 0rem;
+}
+.hamburger span {
+  height: 0.2rem;
+  background: #111;
+}
+.hamburger span::before, .hamburger span::after {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  background: #111;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  position: absolute;
+}
+.hamburger span::before {
+  top: -0.6rem;
+}
+.hamburger span::after {
+  top: 0.6rem;
+}
+.hamburger:hover span::after {
+  top: 0.8rem;
+}
+.hamburger:hover span::before {
+  top: -0.8rem;
+}
+
+.menu {
+  width: 35%;
+  background: url("../img/nav_bg.jpg");
+  background-size: cover;
+  padding: 12rem 4rem 3rem 4rem;
+}
+.menu .close-btn {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  top: 4.5rem;
+  left: 3.3rem;
+}
+.menu .close-btn:before, .menu .close-btn:after {
+  left: 0rem;
+  top: 1.4rem;
+  content: "";
+  display: block;
+  width: 3.1rem;
+  height: 0.2rem;
+  position: absolute;
+  background: #fff;
+}
+.menu .close-btn:before {
+  transform: rotate(45deg);
+}
+.menu .close-btn:after {
+  transform: rotate(-45deg);
+}
+.menu .socmed ul {
+  padding: 0rem;
+  position: relative;
+  left: -1rem;
+  padding-bottom: 2rem;
+}
+.menu .socmed li {
+  display: inline-block;
+  padding: 0rem 0.4rem;
+}
+.menu .socmed a {
+  font-size: 1.8rem;
+}
+.menu ul {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 3rem;
+  letter-spacing: 2.5pt;
+  font-weight: 900;
+  color: #fff;
+}
+
+.submenu {
+  margin-bottom: 1rem;
+  padding-left: 0rem;
+}
+.submenu a {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.submenu a:before {
+  content: "-";
+  position: relative;
+  margin-right: 0.2rem;
+}
+
+.search {
+  top: 4.4rem;
+  right: 3.3rem;
+  cursor: pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.search input {
+  font-family: "ubuntu", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  height: 2.4rem;
+  width: 2.4rem;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0.2rem solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 2.4rem;
+}
+.search:hover input, .search:focus input, .search:active input {
+  outline: none;
+  width: 17rem;
+}
+.search .tail {
+  content: "";
+  width: 1.4rem;
+  height: 0.4rem;
+  background: #fff;
+  opacity: 1;
+  right: -0.5rem;
+  bottom: -0.3rem;
+  position: absolute;
+  transform: rotate(50deg);
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.socmed-contact {
+  bottom: 3rem;
+}
+
+.contact span {
+  letter-spacing: 2.5pt;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.main-slider-title {
+  font-size: 5.5rem;
+  font-weight: 900;
+  letter-spacing: 2.5pt;
+  margin: 1.2rem 0rem;
+}
+.main-slider-title span {
+  background: #000;
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  padding: 1rem 1.4rem 0rem 1.8rem;
+  left: -1.2rem;
+}
+
+.p-slider {
+  margin-top: 2rem;
+  padding: 0.5rem 2rem 0.5rem 0rem;
+  height: 3rem;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 0.3rem solid #000;
+}
+.p-slider .list {
+  letter-spacing: 2.5pt;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.main-slider .content {
+  left: 4.5rem;
+}
+
+.about-slider {
+  display: inline-block;
+  max-width: 47rem;
+}
+
+.about h1 {
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.about h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 4rem;
+  height: 0.1rem;
+  background: #111;
+}
+.about h4 {
+  line-height: 2.4rem;
+}
+.about p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.section-title h1 {
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.section-title h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 4rem;
+  height: 0.1rem;
+  background: #111;
+}
+.section-title h6 {
+  font-weight: 700;
+}
+
+.services-icon {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 0.1rem solid #111;
+  display: inline-block;
+}
+
+.work-filter {
+  padding: 0rem;
+  margin-top: 1.3rem;
+}
+.work-filter li {
+  display: inline-block;
+}
+.work-filter li:first-child a {
+  padding-left: 0rem;
+}
+.work-filter a {
+  padding: 0rem 0.8rem;
+  font-weight: 100;
+  font-size: 1.8rem;
+  color: #111;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.work-filter a.active {
+  color: #7beec7;
+}
+.work-filter a:hover, .work-filter a:focus, .work-filter a:active {
+  opacity: 0.7;
+}
+
+.content-overlay {
+  background-color: rgba(123, 238, 199, 0.9);
+}
+.content-overlay:before, .content-overlay:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: block;
+  background: transparent;
+  border: 0rem solid #111;
+}
+.content-overlay:before {
+  border-width: 0.4rem 0.4rem 0rem 0rem;
+}
+.content-overlay:after {
+  border-width: 0rem 0rem 0.4rem 0.4rem;
+}
+.content-overlay .title {
+  font-size: 1.8rem;
+  letter-spacing: 1.2pt;
+  line-height: 2.4rem;
+}
+.content-overlay .info {
+  font-size: 1.4rem;
+  letter-spacing: 1.2pt;
+  line-height: 1.8rem;
+}
+
+.heart-btn {
+  clear: both;
+  display: inline-block;
+  min-width: 4rem;
+  text-align: center;
+  top: 1.7rem;
+  left: 1.3rem;
+  position: absolute;
+  color: #111;
+  z-index: 2;
+}
+.heart-btn:hover, .heart-btn:active, .heart-btn:focus {
+  color: #111;
+  outline: none;
+  text-decoration: none;
+}
+.heart-btn .icon-heart {
+  font-size: 2.4rem;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.heart-btn .icon-heart:hover {
+  color: #fff;
+}
+.heart-btn .icon-heart.clicked {
+  color: #ff0000;
+}
+
+.loop-work {
+  font-size: 3.6rem;
+  line-height: 10rem;
+  padding: 5rem 0rem;
+}
+
+.newsletter .n-left {
+  background: #7beec7;
+  padding: 10.9rem 0rem;
+}
+.newsletter .n-left h1 {
+  position: relative;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #111;
+  left: 5rem;
+}
+.newsletter .n-right {
+  background: #111;
+  padding: 5rem;
+}
+.newsletter button {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  letter-spacing: 1.2pt;
+  padding: 1.4rem 3.8rem;
+}
+.newsletter form {
+  background: #fff;
+  padding: 5rem;
+  padding-top: 6rem;
+}
+
+footer {
+  background: #f4f4f4;
+  display: block;
+}
+footer h4 {
+  font-weight: 700;
+}
+footer address, footer p, footer span {
+  color: #787878;
+  letter-spacing: 0.4pt;
+}
+footer address {
+  line-height: 2.2rem;
+  letter-spacing: 1.2pt;
+}
+footer span {
+  letter-spacing: 1.5pt;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {

@@ -10,7 +10,9 @@
 <!-- <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"> -->
 
 <!-- CSS & Fonts -->
-<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,600,700|PT+Serif:400,600,700" rel="stylesheet"> -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+
 <link rel="stylesheet" type="text/css"  href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css"  href="assets/css/tachyons.min.css">
 <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.css">
@@ -18,118 +20,122 @@
 <link rel="stylesheet" type="text/css"  href="assets/css/slick.css">
 
 </head>
-<body>
+<body class="relative">
 	<header>
     <div class="wrapper">
       <div class="fl logo">
-        <img src="assets/img/logo.png"/>
+        <a href="">
+          <img src="assets/img/logo.png"/>
+        </a>
       </div>
-      <div class="fr hamburger">
-        <span></span>
+      <div class="fr hamburger relative">
+        <span class="db w-100 relative"></span>
       </div>
     </div>
+    <div class="cb db"></div>
   </header>
-  <section class="menu">
-    <span class="close"></span>
-    <div class="tr search">
+  <section class="menu fixed right-0 top-0 z-2 h-100 dn">
+    <span class="close-btn absolute"></span>
+    <div class="tr search absolute">
       <form>
         <input type="text" />
         <span class="tail"></span>
       </form>
     </div>
     <ul>
-      <li><a href="">HOME</a></li>
+      <li><a href="">HOME</a></li>  
       <li><a href="">ABOUT</a>
-        <ul>
-          <li><a href="">ABOUT NUMBER 1</a></li>
-          <li><a href="">ABOUT NUMBER 2</a></li>
-          <li><a href="">ABOUT NUMBER 3</a></li>
-          <li><a href="">ABOUT NUMBER 4</a></li>
+        <ul class="submenu">
+          <li><a href="">About Number One</a></li>
+          <li><a href="">About Number Two</a></li>
+          <li><a href="">About Number Three</a></li>
+          <li><a href="">About Number Four</a></li>
         </ul>
       </li>
       <li><a href="">PORTFOLIO</a> </li>
       <li><a href="">BLOG</a></li>
       <li><a href="">CONTACT</a></li>
     </ul>
-    <div class="socmed-contact">
+    <div class="socmed-contact absolute db">
       <div class="socmed">
         <ul>
-          <li><a href=""><i class=""></i></a></li>
-          <li><a href=""><i class=""></i></a></li>
-          <li><a href=""><i class=""></i></a></li>
-          <li><a href=""><i class=""></i></a></li>
-          <li><a href=""><i class=""></i></a></li>
+          <li><a href=""><i class="icon-facebook"></i></a></li>
+          <li><a href=""><i class="icon-instagram"></i></a></li>
+          <li><a href=""><i class="icon-whatsapp"></i></a></li>
+          <li><a href=""><i class="icon-telegram"></i></a></li>
+          <li><a href=""><i class="icon-twitter"></i></a></li>
         </ul>
       </div>
       <div class="contact">
-        <span class="db">T: 003 124 115</span>
-        <span class="db">E: information@mail.com</span>
+        <span class="db white lekton">T: 003 124 115</span>
+        <span class="db white lekton">E: information@mail.com</span>
       </div>
     </div>
   </section>
   <section class="main-slider">
-    <div class="wrapper">
-      <div class="content">
-        <h1>PURE
+    <div class="wrapper relative">
+      <div class="content abs-center-vertical z-1 db">
+        <h1 class="main-slider-title">PURE
           <span>ELEGANCE</span>
         </h1>
-        <div class="p-slider">
+        <div class="p-slider dib">
           <p class="list">MODERN COMBINATION</p>
           <p class="list">CREATIVE SOLUTIONS</p>
           <p class="list">AWESOME THEME</p>
         </div>
       </div>
       <div class="slider">
-        <div class="list"><img src=""></div>
-        <div class="list"><img src=""></div>
-        <div class="list"><img src=""></div>
+        <div class="list"><img src="assets/img/main-slider/1.jpg"></div>
+        <div class="list"><img src="assets/img/main-slider/2.jpg"></div>
+        <div class="list"><img src="assets/img/main-slider/3.jpg"></div>
+        <div class="list"><img src="assets/img/main-slider/4.jpg"></div>
       </div>
     </div>
   </section>
-  <section class="about">
-    <div class="wrapper">
-      <div class="w-50">
-        <h1>HISTORY OF AGENCY <span class="line"></span></h1>
-        <h4>WHO LOVES OR PURSUES OR DESIRES TO OBTAIN PAIN OF ITSELF, BUT BECAUSE OCCASIONALLY CIRCUMSTANCES OCCUR AND PAIN CAN PROCURE HIM SOME GREAT PLEASURE</h4>
-        <p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
+  <section class="about pv6">
+    <div class="wrapper pt4">
+      <div class="w-60 fl pr6 pt5">
+        <h1 class="b lekton let-spc1 relative">HISTORY OF AGENCY <span class="line"></span></h1>
+        <h4 class="ubuntu fw4 let-spc1 pr5 mb5">WHO LOVES OR PURSUES OR DESIRES TO OBTAIN PAIN OF ITSELF, BUT BECAUSE OCCASIONALLY CIRCUMSTANCES OCCUR AND PAIN CAN PROCURE HIM SOME GREAT PLEASURE</h4>
+        <p class="ubuntu let-spc0 fw1 mt3 pr5">Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
       </div>
-      <div class="w-50">
+      <div class="w-40 fr tr">
         <div class="about-slider">
-          <div class="list"><img src=""></div>
-          <div class="list"><img src=""></div>
-          <div class="list"><img src=""></div>
-          <div class="list"><img src=""></div>
+          <div class="list"><img src="assets/img/about/about_img.jpg"></div>
+          <div class="list"><img src="assets/img/about/about_img2.jpg"></div>
+          <div class="list"><img src="assets/img/about/about_img3.jpg"></div>
         </div>
       </div>
+      <div class="db cb"></div>
     </div>
   </section>
-  <section class="services">
+  <section class="services pb6">
     <div class="wrapper">
-      <div class="db">
+      <div class="db section-title">
         <h1>WHY CHOOSE US <span class="line"></span></h1>
         <h6>Except to obtain some advantage from it</h6>
       </div>
-      <div class="db">
-        <div class="w-third fl">
+      <div class="db mt5">
+        <div class="w-third fl pr5">
           <div class="services-icon">
-            <span class="icon-tools db fn"></span>
-            <span class="line"></span></div>
-          <h4>BRANDING</h4>
-          <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
+            <span class="icon-pencil2 f1"></span>
+          </div>
+          <h4 class = "fw6 mb2">BRANDING</h4>
+          <p class="mt3 fw1">Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
         </div>
-        <div class="w-third fl">
+        <div class="w-third fl pr5">
           <div class="services-icon">
-            <span class="icon-globe db fn"></span>
-            <span class="line"></span></div>
-          <h4>PLAN OF WORK</h4>
-          <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
+            <span class="icon-earth f1"></span>
+          </div>
+          <h4 class = "fw6 mb2">PLAN OF WORK</h4>
+          <p class="mt3 fw1">Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
         </div>
-        <div class="w-third fl">
+        <div class="w-third fl pr5">
           <div class="services-icon">
-            <span class="icon-paintbrush db fn"></span>
-            <span class="line"></span></div>
-          <h4>ILUSTRATION</h4>
-          <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
+            <span class="icon-paint-format f1"></span>
+          </div>
+          <h4 class = "fw6 mb2">ILUSTRATION</h4>
+          <p class="mt3 fw1">Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
         </div>
         <div class="cb db"></div>
       </div>
@@ -137,88 +143,113 @@
   </section>
   <section class="our-work">
     <div class="wrapper">
-      <div class="db">
+      <div class="db section-title">
         <h1>OUR WORK <span class="line"></span></h1>
         <h6>Laborious to obtain some advantage from it</h6>
       </div>
-      <div class="db">
-        <div class="hamburger-work dib"></div>
-        <ul class="dib">
-          <li><a href="">All</a></li>
+      <div class="db mt5 mb5">
+        <div class="hamburger-work dib pr4"></div>
+        <ul class="dib work-filter">
+          <li><a class="active" href="">All</a></li>
           <li><a href="">Branding</a></li>
           <li><a href="">Web Design</a></li>
           <li><a href="">Graphic Design</a></li>
         </ul>
       </div>
       <div class="db">
-        <div class="w-third fl">
-          <div class="absolute right-0 left-0 bottom-0 top-0">
-            <a class="">
-              <i class="icon-love"></i>
-              <span>4213</span>
+        <div class="w-third fl relative pr4 mb4">
+          <div class="absolute right-2 left-0 bottom-0 top-0 content-overlay">
+            <a class="heart-btn" href="">
+              <i class="icon-heart clicked"></i>
+              <span class="db ubuntu">4213</span>
             </a>
             <div class="absolute left-2 bottom-2 right-2">
-              <span class="title b">STYLE FASHION</span>
-              <span class="info">NEW BAG &amp; STYLE FASHION</span>
+              <span class="title b db ubuntu">STYLE FASHION</span>
+              <span class="info db ubuntu">NEW BAG &amp; STYLE FASHION</span>
             </div>
           </div>
-          <img src="" />
+          <img src="assets/img/portfolio/img_1.jpg"/>
         </div>
-        <div class="w-third fl">
-          <div class="absolute right-0 left-0 bottom-0 top-0">
-            <a class="">
-              <i class="icon-love"></i>
-              <span>4213</span>
+        <div class="w-third fl relative pr4 mb4">
+          <div class="absolute right-2 left-0 bottom-0 top-0 content-overlay">
+            <a class="heart-btn" href="">
+              <i class="icon-heart clicked"></i>
+              <span class="db ubuntu">4213</span>
             </a>
             <div class="absolute left-2 bottom-2 right-2">
-              <span class="title b">STYLE FASHION</span>
-              <span class="info">NEW BAG &amp; STYLE FASHION</span>
+              <span class="title b db ubuntu">STYLE FASHION</span>
+              <span class="info db ubuntu">NEW BAG &amp; STYLE FASHION</span>
             </div>
           </div>
-          <img src="" />
+          <img src="assets/img/portfolio/img_1.jpg"/>
         </div>
-        <div class="w-third fl">
-          <div class="absolute right-0 left-0 bottom-0 top-0">
-            <a class="">
-              <i class="icon-love"></i>
-              <span>4213</span>
+        <div class="w-third fl relative pr4 mb4">
+          <div class="absolute right-2 left-0 bottom-0 top-0 content-overlay">
+            <a class="heart-btn" href="">
+              <i class="icon-heart clicked"></i>
+              <span class="db ubuntu">4213</span>
             </a>
             <div class="absolute left-2 bottom-2 right-2">
-              <span class="title b">STYLE FASHION</span>
-              <span class="info">NEW BAG &amp; STYLE FASHION</span>
+              <span class="title b db ubuntu">STYLE FASHION</span>
+              <span class="info db ubuntu">NEW BAG &amp; STYLE FASHION</span>
             </div>
           </div>
-          <img src="" />
+          <img src="assets/img/portfolio/img_1.jpg"/>
+        </div>
+        <div class="w-third fl relative pr4 mb4">
+          <div class="absolute right-2 left-0 bottom-0 top-0 content-overlay">
+            <a class="heart-btn" href="">
+              <i class="icon-heart"></i>
+              <span class="db ubuntu">21389</span>
+            </a>
+            <div class="absolute left-2 bottom-2 right-2">
+              <span class="title b db ubuntu">STYLE FASHION</span>
+              <span class="info db ubuntu">NEW BAG &amp; STYLE FASHION</span>
+            </div>
+          </div>
+          <img src="assets/img/portfolio/img_2.jpg"/>
+        </div>
+        <div class="w-third fl relative pr4 mb4">
+          <div class="absolute right-2 left-0 bottom-0 top-0 content-overlay">
+            <a class="heart-btn" href="">
+              <i class="icon-heart"></i>
+              <span class="db ubuntu">5114</span>
+            </a>
+            <div class="absolute left-2 bottom-2 right-2">
+              <span class="title b db ubuntu">STYLE FASHION</span>
+              <span class="info db ubuntu">NEW BAG &amp; STYLE FASHION</span>
+            </div>
+          </div>
+          <img src="assets/img/portfolio/img_3.jpg"/>
         </div>
         <div class="cb db"></div>
       </div>
     </div>
-    <div class="tc">
-      <span class="load"></span>
+    <div class="tc db">
+      <span class="icon-loop2 loop-work dib"></span>
     </div>
   </section>
-  <section class="newsletter">
-    <div class="container">
-      <div class="w-50 n-left">
-        <h1>
+  <section class="newsletter mt4 mb7">
+    <div class="wrapper">
+      <div class="w-50 n-left fl relative">
+        <h1 class="">
           STAY INFORMED <br/>
           WITH OUR
           <strong> NEWSLETTER</strong>
         </h1>
       </div>
-      <div class="w-50 n-right pa4">
-        <div class="pa4">
-          <form>
-            <input type="email" placeholder="ENTER YOUR EMAIL" />
-            <button>SUBSCRIBE</button>
-          </form>
-        </div>
+      <div class="w-50 n-right fl">
+        <form class="tc">
+          <input type="email" class="w-100" placeholder="ENTER YOUR EMAIL" />
+          <button>SUBSCRIBE</button>
+        </form>
       </div>
+      <div class="db cb"></div>
     </div>
   </section>
-	<footer>
-    <div class="container">
-      <div class="w-third fl">
+	<footer class="pt6 pb6">
+    <div class="wrapper">
+      <div class="w-20 fl">
         <h4>O.A.K Theme</h4>
         <address>
           City 35 AM <br/>
@@ -226,20 +257,20 @@
           your Country
         </address>
       </div>
-      <div class="w-third fl tc">
+      <div class="w-60 fl tc">
         <div class="socmed socmed-footer">
-          <ul>
-            <li><a href=""><i class=""></i></a></li>
-            <li><a href=""><i class=""></i></a></li>
-            <li><a href=""><i class=""></i></a></li>
-            <li><a href=""><i class=""></i></a></li>
-            <li><a href=""><i class=""></i></a></li>
+          <ul class="dib pl0 mb4 pt4">
+            <li class="dib ph2"><a href="" class="base-black"><i class="icon-facebook"></i></a></li>
+            <li class="dib ph2"><a href="" class="base-black"><i class="icon-instagram"></i></a></li>
+            <li class="dib ph2"><a href="" class="base-black"><i class="icon-whatsapp"></i></a></li>
+            <li class="dib ph2"><a href="" class="base-black"><i class="icon-telegram"></i></a></li>
+            <li class="dib ph2"><a href="" class="base-black"><i class="icon-twitter"></i></a></li>
           </ul>
         </div>
-        <span>© 2015 OAK, ALL RIGHTS RESERVED</span>
+        <span class="dib copyright">© 2015 OAK, ALL RIGHTS RESERVED</span>
       </div>
-      <div class="w-third fl">
-        <h4>CONTACT information</h4>
+      <div class="w-20 fl">
+        <h4>CONTACT INFO</h4>
         <p>
           T:003 124 115 <br>
           E:info@mail.com <br>
